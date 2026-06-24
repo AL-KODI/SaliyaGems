@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f9fc;
+  color: #333;
+}
+
+.home {
+  min-height: 100vh;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("../assets/images/bckgimg.png");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* NAVBAR */
+
+
+
+/* HERO CONTENT */
+
+.hero-content {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 0 8%;
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 60px;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  color: #f0f0f0;
+  font-size: 20px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+/* BUTTONS */
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: #f9b233;
+  color: white;
+  padding: 15px 35px;
+  font-size: 17px;
+  border-radius: 50px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  background: #e6a11f;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 15px 35px;
+  font-size: 17px;
+  border-radius: 50px;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: #333;
+}
+
+/* FEATURES */
+
+.features {
+  padding: 80px 8%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+
+  background: #ffffff;
+}
+
+.card {
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  text-align: center;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+}

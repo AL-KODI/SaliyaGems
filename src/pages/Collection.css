@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f7fb;
+}
+
+.gem-page {
+  padding: 60px 8%;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.page-header h1 {
+  font-size: 42px;
+  color: #1f2937;
+  margin-bottom: 15px;
+}
+
+.page-header p {
+  color: #6b7280;
+  font-size: 18px;
+}
+
+.gem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.gem-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .35s;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.gem-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 40px rgba(0,0,0,.15);
+}
+
+.gem-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 25px;
+}
+
+.card-content h2 {
+  margin-top: 0;
+  color: #111827;
+}
+
+.card-content p {
+  color: #6b7280;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.card-content button {
+  background: #0f172a;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.card-content button:hover {
+  background: #2563eb;
+}
+
+@media(max-width:768px){
+
+.gem-page{
+padding:40px 20px;
+}
+
+.page-header h1{
+font-size:32px;
+}
+
+}
